@@ -1,0 +1,36 @@
+.Landing{
+  width: 100%;
+}
+
+figure{
+  margin: 0px;
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0%, 99% 76%, 0 88%);
+
+}
+.hero .hero-title{
+  display: flex;
+  /* width: 90%; */
+  height: 100vh;
+  background-color: var(--blueLight);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title h3{
+  margin: 0px;
+  font-size: 28px;
+  padding: 20px 40px;
+  color: var(--white);
+}
+
+.hero figure img{
+  height: 100vh;
+  width: 700px;
+  /* padding: 10px; */
+  /* border: 1px solid var(--blue); */
+}
