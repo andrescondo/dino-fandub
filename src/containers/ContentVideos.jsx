@@ -1,13 +1,14 @@
 import React from 'react';
 
+// import '../styles/components/ContentVideos.css'
+import VideoPlay from '../components/VideoPlay';
+
 const ContentVideos = () => {
   return(
-    <div>
+    <>
       <h3>Mira algunos de mis trabajos</h3>
-      <div className="Video">
-        
-      </div>
-    </div>
+      <VideoPlay />
+    </>
   );
 };
 

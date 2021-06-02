@@ -4,7 +4,7 @@
   height: 70px;
   align-items: center;
   padding: 0px 30px;
-  border-bottom: 1px solid var(--blueSemiBlack);
+  border-bottom: 1px solid var(--blueSemiLight);
   
 }
 
@@ -20,7 +20,8 @@
 }
 
 .Header-nav__help li a:hover{
-  color: var(--blue);
+  /* color: var(--blue); */
+  background-color: var(--blueSemiLight);
 }
 
 .Header-nav li a{
@@ -30,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid var(--blackSemiLight);
+  /* border-right: 1px solid var(--white); */
 }
 .Header-nav__principal li{
   padding: 0px 10px;

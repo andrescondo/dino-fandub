@@ -6,7 +6,7 @@ const Header = () => {
   return(
     <header className="Header">
       <div className="Header-title">
-        <h2>Medicos Avanzan</h2>
+        <h2>Dino Fanduh</h2>
       </div>
       <div className="Header-nav">
         <nav className="Header-nav__help">
@@ -17,14 +17,7 @@ const Header = () => {
             <a href="#">Contactanos</a>
           </li>
         </nav>
-        <nav className="Header-nav__principal">
-          <li>
-            <a href="#">Registrarse</a>
-          </li>
-          <li>
-            <a href="#">Iniciar sesión</a>
-          </li>
-        </nav>
+      
       </div>
     </header>
   )

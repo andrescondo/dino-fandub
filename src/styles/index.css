@@ -1,13 +1,13 @@
 :root{
   --black:#000;
-  --blackSemiLight:#4C4E4E;
+  /* --blackSemiLight:#4C4E4E; */
   --white:#fff;
   /* paleta azul */
-  --blue: #1814FA;
+  /* --blue: #1814FA; */
   --blueSemiBlack:#0C0A7A;
-  --blueBlack:#06053B;
-  --blueLight: #1612E0;
-  --blueSemiLight:#120FBA;
+  --blueBlack:#15202B;
+  --blueLight: #1A91DA;
+  --blueSemiLight:#8394A1;
 
   --font-primeary:'Montserrat', sans-serif;
   --font-secundary:'Rubik', sans-serif;
@@ -21,8 +21,8 @@
 body{
   margin: 0px;
   padding: 0px;
-  background-color: var(--white);
-  color: var(--blackSemiLight);
+  background-color: var(--blueBlack);
+  color: var(--white);
   font-family: var(--font-secundary);
   font-size:16px;
 }
@@ -32,6 +32,6 @@ li{
 }
 
 a{
-  color: var(--blackSemiLight);
+  color: var(--white);
   text-decoration: none;
 }
