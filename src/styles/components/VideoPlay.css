@@ -5,16 +5,19 @@
 }
 .Video{
   display: flex;
-  width: 90%;
+  width: 75%;
   justify-content: space-between;
 }
 
 .Video-title{
   padding: 5px 15px;
 }
-.Video-play{
-
+.Video-title h4{
+  font-size: 20px;
 }
+/* .Video-play{
+
+} */
 
 .Video-title p{
   color: var(--blueSemiLight);

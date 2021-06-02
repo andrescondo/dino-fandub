@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/components/VideoPlay.css';
+import Loader from './Loader';
 
 const VideoPlay = () => {
   return(
@@ -18,6 +19,7 @@ const VideoPlay = () => {
         </div>
         <div className="Video-play">
             <iframe 
+            onLoad={Loader}
             width="560"
             height="315" 
             src="https://www.youtube.com/embed/7JaVzkIENWU" 
