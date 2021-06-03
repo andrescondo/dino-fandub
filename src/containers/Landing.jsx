@@ -6,6 +6,8 @@ import hero from '../img/boochi-header.png'
 import ContentVideos from '../containers/ContentVideos';
 import References from '../containers/References';
 
+
+
 const Landing = () => {
   return(
     <div className="Landing">
@@ -15,8 +17,8 @@ const Landing = () => {
             !!!PAN¡¡¡ <br />
             Ahora que tengo tú atención me presento
             realizó fanduh de Anime, VideoJuegos, etc.
-
-            pdt: Aquí amamos a Boochi  
+            <br />
+            pdt: Aquí amamos a Boochi 
           </h3>
 
         </div>
