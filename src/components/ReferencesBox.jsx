@@ -4,13 +4,8 @@ import React from 'react';
 
 // import photoReferences from '../img/tate.png'
 
-
 const ReferencesBox = () => {
-  return(
-    < >
-    </>
-  )
-}
-
+  return <></>;
+};
 
 export default ReferencesBox;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import '../styles/components/Header.css'
+import '../styles/components/Header.css';
 
 const Header = () => {
-  return(
+  return (
     <header className="Header">
       <div className="Header-title">
         <h2>Dino Fandub</h2>
@@ -17,10 +17,9 @@ const Header = () => {
             <a href="#">Contactanos</a>
           </li>
         </nav>
-      
       </div>
     </header>
-  )
-} 
+  );
+};
 
 export default Header;

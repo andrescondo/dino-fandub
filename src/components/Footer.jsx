@@ -2,8 +2,8 @@ import React from 'react';
 
 import '../styles/components/Footer.css';
 
-const Footer = () =>{
-  return(
+const Footer = () => {
+  return (
     <div className="Footer">
       <div className="Footer-info">
         <h2> Datos de contacto</h2>
@@ -21,10 +21,9 @@ const Footer = () =>{
           <p className="social-media__link"></p>
           <p className="social-media__link"></p>
         </div>
-        
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;

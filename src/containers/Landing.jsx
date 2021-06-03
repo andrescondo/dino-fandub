@@ -1,42 +1,40 @@
 import React from 'react';
 
-import '../styles/components/landing.css'
-import hero from '../img/boochi-header.png'
+import '../styles/components/landing.css';
+import hero from '../img/boochi-header.png';
 
 import ContentVideos from '../containers/ContentVideos';
 import References from '../containers/References';
 
-
+import InicialtState from '../InicialState';
 
 const Landing = () => {
-  return(
+  const InicialState = InicialtState;
+  return (
     <div className="Landing">
       <section className="hero">
         <div className="hero-title">
           <h3>
             !!!PAN¡¡¡ <br />
-            Ahora que tengo tú atención me presento
-            realizó fanduh de Anime, VideoJuegos, etc.
+            Ahora que tengo tú atención me presento realizó fanduh de Anime,
+            VideoJuegos, etc.
             <br />
-            pdt: Aquí amamos a Boochi 
+            pdt: Aquí amamos a Boochi
           </h3>
-
         </div>
         <figure>
-          <img src={hero} alt="Foto Header"/>
+          <img src={hero} alt="Foto Header" />
         </figure>
       </section>
       <section className="ContentVideos">
-        <ContentVideos/>
+        <ContentVideos data={InicialState} />
       </section>
       <section className="References">
-        <References/>
+        <References />
       </section>
-      <section className="price">
-
-      </section>
+      <section className="price"></section>
     </div>
-  )
-}
+  );
+};
 
 export default Landing;
