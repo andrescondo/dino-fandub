@@ -1,0 +1,43 @@
+/* clase del landing */
+.References{
+  display:flex;
+  height: 300px;
+  margin: 200px 0px;
+  justify-content: center;
+  padding: 20px 40px;
+  flex-direction: column;
+}
+.References h4{
+  color: var(--white);
+  font-size: 32px;
+}
+
+/* clases del componente */
+.References-container{
+  width: 90%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, .25fr);
+  grid-template-areas:"References-box References-box References-box References-box" ;
+}
+
+.References-box{
+  grid: References-box;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.References-box img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.References-box p{
+  color: var(--blueSemiLight);
+}
+
+

@@ -4,7 +4,7 @@ import '../styles/components/landing.css'
 import hero from '../img/boochi-header.png'
 
 import ContentVideos from '../containers/ContentVideos';
-import References from '../containers/References'
+import References from '../containers/References';
 
 const Landing = () => {
   return(
@@ -28,7 +28,7 @@ const Landing = () => {
         <ContentVideos/>
       </section>
       <section className="References">
-        
+        <References/>
       </section>
       <section className="price">
 
