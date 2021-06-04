@@ -6,10 +6,7 @@ import hero from '../img/boochi-header.png';
 import ContentVideos from '../containers/ContentVideos';
 import References from '../containers/References';
 
-import InicialtState from '../InicialState';
-
 const Landing = () => {
-  const InicialState = InicialtState;
   return (
     <div className="Landing">
       <section className="hero">
@@ -27,7 +24,7 @@ const Landing = () => {
         </figure>
       </section>
       <section className="ContentVideos">
-        <ContentVideos data={InicialState} />
+        <ContentVideos />
       </section>
       <section className="References">
         <References />
