@@ -7,8 +7,6 @@ import InicialtState from '../InicialState';
 
 const ContentVideos = () => {
   const voiceover = InicialtState.voiceover;
-  console.log(voiceover);
-  // const data = data.
   return (
     <>
       <h3>Mira algunos de mis trabajos</h3>

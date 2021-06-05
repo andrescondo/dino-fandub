@@ -4,13 +4,13 @@
 }
 .Video{
   display: flex;
-  width: 75%;
+  width: 65%;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 
 .Video-title{
-  padding: 5px 15px;
+  padding: 5px 30px;
 }
 .Video-title h4{
   font-size: 20px;

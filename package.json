@@ -52,10 +52,11 @@
     "react-router-dom": "^5.2.0"
   },
   "keywords": [
-    "dinofanduh",
+    "dinofandub",
     "react",
     "boochi",
-    "funduh"
+    "fundub",
+    "cloudinary"
   ],
   "author": "andres condo @andreescondo",
   "license": "MIT"

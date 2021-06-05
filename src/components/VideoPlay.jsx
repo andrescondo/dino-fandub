@@ -5,7 +5,6 @@ import '../styles/components/VideoPlay.css';
 
 const VideoPlay = ({ data }) => {
   const { name, description, url_video } = data;
-  console.log(name);
   return (
     <>
       <div className="VideoPlay">
