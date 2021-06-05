@@ -5,6 +5,17 @@ import '../styles/components/VideoPlay.css';
 
 const VideoPlay = ({ data }) => {
   const { name, description, url_video } = data;
+
+  function Press() {
+    const video = document.getElementById(url_video);
+    if (video.paused) {
+      video.play();
+      console.log(' play');
+    }
+  }
+
+  // window.addEventListener('load', Start, false);
+
   return (
     <>
       <div className="VideoPlay">
@@ -14,7 +25,10 @@ const VideoPlay = ({ data }) => {
             <p>{description}</p>
           </div>
           <div className="Video-play">
-            <video src={url_video} width="400px" controls />
+            <video src={url_video} width="400px" id={url_video} />
+            {/* <button onClick={Play()}>Play</button> */}
+            {/* <input type="button" id={name}></input> */}
+            <i className="fas fa-play" id={name} onClick={Press} />
           </div>
         </div>
       </div>

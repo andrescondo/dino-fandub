@@ -2,7 +2,7 @@ const InicialState = {
   voiceover: [
     {
       id: 1,
-      name: 'Prueba - Demo de voz Touya Mochizuki★Isekai wa Smartphone to Tomo ni★Fandub Español★',
+      name: 'Demo de voz Touya Mochizuki★Isekai wa Smartphone to Tomo ni★Fandub Español★',
       description:
         'Apoyen siempre al contenido original!!!Muchas gracias a esta linda personita por prestarme su voz :3.Aquí les dejo su canal, para que puedan ver los demás fandubs geniales que hace.',
       url_video:
