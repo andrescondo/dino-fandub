@@ -11,19 +11,43 @@
 
 .Video-title{
   padding: 5px 30px;
+  width: 40%;
 }
 .Video-title h4{
   font-size: 20px;
   margin-top:0px;
 }
-/* .Video-play{
 
-} */
+.Video-play{
+  width: 50%;
+}
+.Video-play video{
+  width: 100%;
+}
 
 .Video-title p{
   color: var(--blueSemiLight);
 }
 
-.Video-play iframe{
-  transition: all 0.5s ease-out ;
+.video-js .vjs-big-play-button{
+  /* display: flex; */
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-js .vjs-big-play-button 
+.vjs-icon-placeholder:before, 
+.video-js .vjs-play-control 
+.vjs-icon-placeholder:before, 
+.vjs-icon-play:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

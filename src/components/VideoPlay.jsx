@@ -6,21 +6,21 @@ import '../styles/components/VideoPlay.css';
 const VideoPlay = ({ data }) => {
   const { name, description, url_video } = data;
 
-  function Press() {
-    const video = document.getElementById(url_video); //video
-    const play = document.getElementById(name); //button play
-    if (video.paused) {
-      video.play();
-      // remove class and new add
-      play.classList.remove('fa-play');
-      play.classList.add('fa-pause');
-    } else {
-      video.pause();
-      // remove class and new add
-      play.classList.remove('fa-pause');
-      play.classList.add('fa-play');
-    }
-  }
+  // function Press() {
+  //   const video = document.getElementById(url_video); //video
+  //   const play = document.getElementById(name); //button play
+  //   if (video.paused) {
+  //     video.play();
+  //     // remove class and new add
+  //     play.classList.remove('fa-play');
+  //     play.classList.add('fa-pause');
+  //   } else {
+  //     video.pause();
+  //     // remove class and new add
+  //     play.classList.remove('fa-pause');
+  //     play.classList.add('fa-play');
+  //   }
+  // }
 
   return (
     <>
@@ -31,9 +31,17 @@ const VideoPlay = ({ data }) => {
             <p>{description}</p>
           </div>
           <div className="Video-play">
-            <video src={url_video} width="400px" id={url_video} />
-            <i className="fas fa-play" id={name} onClick={Press} />
-            {/* <div className="barra" id="barra" onChange={State}/> */}
+            <video
+              id="my-video"
+              className="video-js vjs-fluid vjs-gib-play-centered"
+              controls
+              preload="auto"
+              data-setup="{}"
+            >
+              <source src={url_video} type="video/mp4" />
+            </video>
+            {/* {<script src='https://vjs.zencdn.net/7.6.5/video.js'></script>} */}
+            {/* <i className="fas fa-play" id={name} onClick={Press} /> */}
           </div>
         </div>
       </div>
