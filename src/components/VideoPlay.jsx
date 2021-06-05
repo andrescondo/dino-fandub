@@ -7,14 +7,20 @@ const VideoPlay = ({ data }) => {
   const { name, description, url_video } = data;
 
   function Press() {
-    const video = document.getElementById(url_video);
+    const video = document.getElementById(url_video); //video
+    const play = document.getElementById(name); //button play
     if (video.paused) {
       video.play();
-      console.log(' play');
+      // remove class and new add
+      play.classList.remove('fa-play');
+      play.classList.add('fa-pause');
+    } else {
+      video.pause();
+      // remove class and new add
+      play.classList.remove('fa-pause');
+      play.classList.add('fa-play');
     }
   }
-
-  // window.addEventListener('load', Start, false);
 
   return (
     <>
@@ -26,9 +32,8 @@ const VideoPlay = ({ data }) => {
           </div>
           <div className="Video-play">
             <video src={url_video} width="400px" id={url_video} />
-            {/* <button onClick={Play()}>Play</button> */}
-            {/* <input type="button" id={name}></input> */}
             <i className="fas fa-play" id={name} onClick={Press} />
+            {/* <div className="barra" id="barra" onChange={State}/> */}
           </div>
         </div>
       </div>
