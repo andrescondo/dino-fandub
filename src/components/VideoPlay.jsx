@@ -1,13 +1,10 @@
 import React from 'react';
-
 import '../styles/components/VideoPlay.css';
-// import Loader from './Loader';
 
-const VideoPlay = ({ data }) => {
-  const { name, description, url_video } = data;
-
+const VideoPlay = ({ name, description, video, url_img }) => {
+  // console.log(url_video)
   // function Press() {
-  //   const video = document.getElementById(url_video); //video
+  //   const video = document.getElementById(video); //video
   //   const play = document.getElementById(name); //button play
   //   if (video.paused) {
   //     video.play();
@@ -26,22 +23,14 @@ const VideoPlay = ({ data }) => {
     <>
       <div className="VideoPlay">
         <div className="Video">
+          <div className="Video-play">
+            <video src={video} controls></video>
+            {/* {<script src='https://vjs.zencdn.net/7.6.5/video.js'></script>} */}
+            {/* <i className="fas fa-play" id={name} onClick={Press} /> */}
+          </div>
           <div className="Video-title">
             <h4>{name}</h4>
             <p>{description}</p>
-          </div>
-          <div className="Video-play">
-            <video
-              id="my-video"
-              className="video-js vjs-fluid vjs-gib-play-centered"
-              controls
-              preload="auto"
-              data-setup="{}"
-            >
-              <source src={url_video} type="video/mp4" />
-            </video>
-            {/* {<script src='https://vjs.zencdn.net/7.6.5/video.js'></script>} */}
-            {/* <i className="fas fa-play" id={name} onClick={Press} /> */}
           </div>
         </div>
       </div>

@@ -1,0 +1,9 @@
+/* .VideoFanduh{
+  margin: 120px 0px;
+} */
+
+.Video-container{
+  margin:50px ;
+  display: flex;
+  justify-content: space-between;
+}

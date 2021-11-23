@@ -1,17 +1,18 @@
 .VideoPlay{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
-.Video{
+/* .Video{
   display: flex;
   width: 65%;
   justify-content: space-between;
   margin-bottom: 150px;
-}
+} */
 
 .Video-title{
-  padding: 5px 30px;
-  width: 40%;
+  padding: 20px 30px;
+  width: 70%;
 }
 .Video-title h4{
   font-size: 20px;
@@ -19,7 +20,7 @@
 }
 
 .Video-play{
-  width: 50%;
+  width: 800px;
 }
 .Video-play video{
   width: 100%;

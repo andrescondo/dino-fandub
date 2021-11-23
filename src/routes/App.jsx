@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Layout from '../components/Layout';
 import Landing from '../containers/Landing';
+import Video from '../containers/Video';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path="/" component={Landing} />
+          <Route exact path="/video/:id" component={Video} />
         </Switch>
       </Layout>
     </BrowserRouter>

@@ -12,6 +12,7 @@ const ContentVideos = () => {
       <h3>Mira algunos de mis trabajos</h3>
       {voiceover.map((voiceover) => {
         return <VideoPlay data={voiceover} key={voiceover.id} />;
+        // return <VideoPlay data={voiceover} key={voiceover.id} />;
       })}
     </>
   );
