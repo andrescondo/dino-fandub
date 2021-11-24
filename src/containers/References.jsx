@@ -14,7 +14,7 @@ const References = () => {
           <img src={photoReferences} alt="" />
           <p>Tate no yuusha</p>
         </div>
-        <ReferencesBox/>
+        <ReferencesBox/> 
         <div className="References-box">
           {/* genially - proyecto */}
           <img src={photoReferences} alt="" />

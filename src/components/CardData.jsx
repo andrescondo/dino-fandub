@@ -9,6 +9,7 @@ const CardData = ({ data }) => {
     <div className="CardDataContainer">
 
       <div className="CardData-box">
+        
         <div className="CardData-title">
           <h4>{name}</h4>
           <p>{description}</p>
@@ -22,6 +23,7 @@ const CardData = ({ data }) => {
             </Link>
           </div>
         </div>
+
         <div className="CardData-img">
           <img src={url_img} alt={`Foto de ${name}`} />
 

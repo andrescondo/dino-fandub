@@ -43,4 +43,34 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 850px){
+  .References{
+    height: auto;
+  }
+  .References-container{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, .5fr);
+    grid-template-areas:"References-box References-box" ;
+  }
+
+  .References-box{
+    grid: References-box;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .References-container{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:"References-box" ;
+  }
+  .References-box{
+    grid: References-box;
+  }
+}
+
 

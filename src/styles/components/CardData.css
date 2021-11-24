@@ -59,3 +59,57 @@
 .CardData-button a:hover{
   background: rgba(0, 0, 0, 4);
 }
+
+@media screen and (max-width: 1200px){
+  .CardData-img{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .CardData-box{
+    /* margin:50px 20px; */
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-template-rows: 55vh; */
+    grid-template-areas:
+    "CardData-img"
+    "CardData-title";
+    position: relative;
+  }
+
+  .CardData-title{
+    grid-area: CardData-title;
+    align-items: flex-end;
+
+  }
+  .CardData-img{
+    grid-area: CardData-img;
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .CardData-title{
+    width: 90%;
+  }
+  .CardData-button{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+@media screen and (max-width: 630px){
+  .CardDataContainer{
+    width: 100%;    
+    margin-bottom: 90px;
+  }
+
+  .ContentData > h3{
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+}
