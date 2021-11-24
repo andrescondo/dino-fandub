@@ -20,7 +20,24 @@
 }
 
 .Video-play{
-  width: 800px;
+  /* width: 800px; */
+  position: relative;
+}
+.Video-play__button {
+  width: 100%;
+  background: rgba(7, 4, 4, 0.849);
+  font-weight: 900;
+  padding: 8px 0px;
+  position: absolute;
+  bottom: 0px;
+  /* left: 20px; */
+}
+.Video-play__button i{
+  /* position: absolute; */
+  left: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 22px;
 }
 .Video-play video{
   width: 100%;
@@ -43,12 +60,3 @@
   align-items: center;
 }
 
-.video-js .vjs-big-play-button 
-.vjs-icon-placeholder:before, 
-.video-js .vjs-play-control 
-.vjs-icon-placeholder:before, 
-.vjs-icon-play:before {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

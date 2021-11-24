@@ -12,7 +12,6 @@ const ContentData = () => {
       <h3>Mira algunos de mis trabajos</h3>
       {
         card.map((data, key) => {
-          console.log(data)
           return(
             <CardData key={key} data={data}/>
           )

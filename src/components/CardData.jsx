@@ -5,7 +5,6 @@ import '../styles/components/CardData.css'
 
 const CardData = ({ data }) => {
   const { name, description, url_img, url_video } = data;
-  console.log(url_video)
   return (
     <div className="CardDataContainer">
 
@@ -16,7 +15,7 @@ const CardData = ({ data }) => {
           <div className="CardData-button">
             <Link
               to={{
-                pathname: `/video/${name}`,
+                pathname: `/video`,
                 data: { name, description, url_img, url_video }
               }}>
               Ver Doblaje

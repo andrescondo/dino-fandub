@@ -4,6 +4,123 @@
 
 .Video-container{
   margin:50px ;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "Video-box Video-icon";
+  position: relative;
+}
+
+.Video-box{
+  /* width: 800px; */
+  grid: Video-box ;
+}
+
+.Video-icon{
+  width: 100%;
+  grid: Video-icon;
+}
+
+.Video-icon__play{
+  width: 100%;
+}
+.Video-icon__play p{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.Video-icon__play img{
+  width: 100%;
+}
+
+@media screen and (max-width: 850px){
+  .Video-container{
+    margin:50px ;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "Video-box";
+    position: relative;
+  }
+  .Video-box{
+    grid: Video-box;
+  }
+  .Video-icon{
+    display: none;
+    position: absolute;
+    left: -3000;
+    z-index: 99;
+  }
+  .Video-icon.active{
+    display: flex;
+    right: 0;
+    width: 150px;
+    bottom: -30px;
+  }
+}
+
+
+@media screen and (max-width: 777px){
+  .Video-icon.active{
+    background-color: var(--blueBlack);
+  }
+  .Video-title h4{
+    font-size: 18px;
+  }
+  .Video-title p{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:640px){
+  .Video-container{
+    margin:50px 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55vh;
+    grid-template-areas:"Video-box",
+                        "Video-icon";
+    position: relative;
+  }
+  .Video-icon{
+    grid:Video-icon;
+    display: flex;
+    position: relative;
+  }
+  .Video-icon.active{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    bottom: 0px;
+    margin: 0px auto ;
+  }
+  .Video-title{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:410px){
+  .Video-container{
+    margin:50px 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45vh;
+    grid-template-areas:"Video-box",
+                        "Video-icon";
+    position: relative;
+  }
+
+  .Video-box{
+    grid: Video-box;
+  }
+  .Video-icon{
+    grid:Video-icon;
+    display: flex;
+    position: relative;
+  }
+  .Video-icon.active{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    bottom: 0px;
+    margin: 0px auto ;
+  }
 }
