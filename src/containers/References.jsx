@@ -9,27 +9,9 @@ const References = () => {
     <>
       <h4>Doblajes hechos</h4>
       <div className="References-container">
-        <div className="References-box">
-          {/* genially - proyecto */}
-          <img src={photoReferences} alt="" />
-          <p>Tate no yuusha</p>
-        </div>
+
         <ReferencesBox/> 
-        <div className="References-box">
-          {/* genially - proyecto */}
-          <img src={photoReferences} alt="" />
-          <p>Tate no yuusha</p>
-        </div>
-        <div className="References-box">
-          {/* genially - proyecto */}
-          <img src={photoReferences} alt="" />
-          <p>Tate no yuusha</p>
-        </div>
-        <div className="References-box">
-          {/* genially - proyecto */}
-          <img src={photoReferences} alt="" />
-          <p>Tate no yuusha</p>
-        </div>
+
       </div>
     </>
   );
