@@ -54,3 +54,53 @@ background: linear-gradient(153deg, rgba(21,32,43,1) 0%, rgba(26,145,218,1) 77%,
   margin-bottom: 80px;
   font-size: 32px;
 }
+
+@media screen and (max-width: 800px){
+  .hero figure img{
+    width: 350px;
+  }
+  .hero{
+    clip-path:none;
+    background-color: linear-gradient( 153deg , rgba(21,32,43,1) 0%,rgba(26,145,218,1) 77%,  rgb(158, 133, 133)100%);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-title{
+    clip-path: none;
+  }
+  .hero .hero-title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .hero figure{
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .hero figure img{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .hero figure img{
+    height: 350px;
+    width: auto;
+  }
+
+  .hero-title h3 {
+    padding-top: 50px;
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 325px){
+  .hero figure img{
+    height: 280px;
+  }
+}
