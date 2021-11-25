@@ -10,7 +10,7 @@ import '../styles/components/Footer.css';
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <div className="Footer" id="footer">
       <div className="Footer-info">
         <h2> Datos de contacto</h2>
         <div className="footer-info__contact">

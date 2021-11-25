@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/components/Header.css';
@@ -26,10 +27,15 @@ const Header = () => {
       <div className={`Header-nav ${icon === true ? 'active' : ''}`}>
         <nav className="Header-nav__help">
           <li>
-            <a href="">Información</a>
+            <Link to="/">
+              Inicio
+            </Link>
           </li>
+          {/* <li>
+            <a href="">Información</a>
+          </li> */}
           <li>
-            <a href="#">Contactanos</a>
+            <a href="#footer">Contáctame</a>
           </li>
         </nav>
       </div>
