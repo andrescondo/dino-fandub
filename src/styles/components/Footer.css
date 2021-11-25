@@ -12,7 +12,43 @@
 .social-media__link{
   width: 100px;
   height: 100px;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   margin: 10px 15px;
   border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
+.social-media__link a{
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+
+@media screen and (max-width: 777px){
+  .Footer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 590px){
+  .Footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Footer-social .social-media{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+
